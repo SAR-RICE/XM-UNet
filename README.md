@@ -1,8 +1,6 @@
-# The official repository of XM-UNet
-We will update this repository with the publication details and release the code as soon as the related paper is published.
 <div align="center">
 <h1>eXplainable Mamba UNet - XM-UNet </h1>
-<h3>Parallel Vision Mamba Significantly Reduces Parameters for Skin Lesion Segmentation</h3>
+<h3>The official repository of XM-UNet. We will update this repository with the publication details and release the code as soon as the related paper is published.</h3>
 
 </div>
 
