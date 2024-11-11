@@ -78,10 +78,10 @@ class TFIExplainer(nn.Module):
         x_3 = self.dconv21_1(x_3)
         x = x_1 + x_2 + x_3 + x_init
         spatial_att = self.conv(x)
-        attention_weights = F.sigmoid(channel_att_vec * spatial_att)
-        mask = torch.where(attention_weights > 0.6, torch.ones_like(attention_weights), torch.zeros_like(attention_weights))
-        out = src_inputs * mask
         importance = F.sigmoid(F.adaptive_avg_pool2d(channel_att_vec * spatial_att, output_size=(1, 1)))
+        mask = torch.where(importance > 0.6, torch.ones_like(importance), torch.zeros_like(importance))
+        mask = mask.view(-1, 1, 1)
+        out = src_inputs * mask
         out = self.conv(out)
 
         return out, importance
