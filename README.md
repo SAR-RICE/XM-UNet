@@ -6,7 +6,7 @@
 
 
 ## Highlights🔥
-### *1.The XM-UNet has only 0.019M parameters, 0.279 GFLOPs.*</br>
+### *1.The XM-UNet has only 0.190M parameters, 0.279 GFLOPs.*</br>
 ### *2.The first explainable model for SAR rice area extraction.*</br>
 
 ## News🚀
